@@ -3,8 +3,6 @@ require("@nomiclabs/hardhat-web3");
 require("@nomiclabs/hardhat-ethers");
 
 
-// This is a sample Hardhat task. To learn how to create your own go to
-// https://hardhat.org/guides/create-task.html
 task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   const accounts = await hre.ethers.getSigners();
 
@@ -14,13 +12,13 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 });
 
 task("balance", "Prints an account's balance")
-  .addParam("account", "The account's address")
-  .setAction(async (taskArgs) => {
-    const account = web3.utils.toChecksumAddress(taskArgs.account);
-    const balance = await web3.eth.getBalance(account);
+.addParam("account", "The account's address")
+.setAction(async (taskArgs) => {
+  const account = web3.utils.toChecksumAddress(taskArgs.account);
+  const balance = await web3.eth.getBalance(account);
 
-    console.log(web3.utils.fromWei(balance, "ether"), "ETH");
-  });
+  console.log(web3.utils.fromWei(balance, "ether"), "ETH");
+});
 
 
 task("wallet", "Create a wallet (pk) link", async (_, { ethers }) => {

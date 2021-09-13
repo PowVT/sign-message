@@ -20,5 +20,10 @@
     "ethers": "^5.4.6",
     "hardhat": "^2.6.4",
     "web3": "^1.5.2"
+  },
+  "dependencies": {
+    "bip39": "^3.0.4",
+    "ethereumjs-wallet": "^1.0.1",
+    "truffle-hdwallet-provider": "^1.0.17"
   }
 }
