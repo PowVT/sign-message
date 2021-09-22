@@ -24,6 +24,7 @@
   "dependencies": {
     "bip39": "^3.0.4",
     "ethereumjs-wallet": "^1.0.1",
-    "truffle-hdwallet-provider": "^1.0.17"
+    "hdkey": "^2.0.1",
+    "qrcode-terminal": "^0.12.0"
   }
 }

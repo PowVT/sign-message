@@ -2,6 +2,7 @@ const { ethers } = require("ethers");
 const hre = require("hardhat");
 
 async function main() {
+
   // Hardhat provider
   const provider = new ethers.providers.JsonRpcProvider("http://localhost:8545");  // http://localhost:8545 https://rpc.xdaichain.com/
   const signer = await provider.getSigner()
@@ -12,7 +13,7 @@ async function main() {
   let message = ethers.utils.id("Your message here!");
 
   // Wallet init
-  var wallet = new ethers.Wallet("0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80", provider);
+  var wallet = new ethers.Wallet("0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80", provider); // initiate wallet object with a private key.
 
   // To Wallet init
   toAddress = "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
