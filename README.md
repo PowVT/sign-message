@@ -1,8 +1,8 @@
 # Signed Messages Hardhat Project
 
-Try running some of the following tasks:
-
 Run 'node scripts/signMessage.js' to sign a message. Change the signer and message contents in signMessage.js. But first spin up local blockchain to run transactions against 'npx hardhat node'.
+
+Here are some common Hardhat commands available on the command line.
 
 ```shell
 npx hardhat accounts
